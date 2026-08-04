@@ -1,0 +1,33 @@
+# --- Build ---
+target/
+dist/
+build/
+
+# --- Dependencias ---
+node_modules/
+
+# --- Entorno local ---
+# OJO: application.properties lleva credenciales de la base de datos. Antes de
+# publicar el repositorio, saca la contraseña de ahí y pásala por la variable de
+# entorno DB_PASSWORD (ver README).
+*.local
+.env.local
+.env.*.local
+
+# --- Herramientas ---
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.mvn/timing.properties
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+npm-debug.log*
+pnpm-debug.log*
